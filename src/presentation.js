@@ -20,42 +20,6 @@ import CodeSlide from 'spectacle-code-slide';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
-import preloader from 'spectacle/lib/utils/preloader';
-
-// Images
-import memIEWin from './images/ie-win.gif';
-import memConfused from './images/confused.gif';
-import memNotBad from './images/not-bad.gif';
-import memGreat from './images/great.gif';
-import memBravo from './images/bravo.gif';
-import memMath from './images/math.gif';
-import memSeba from './images/typowy-seba.png';
-import gifInterpolation from './images/media-query-opt.gif';
-import gifInterpolation2 from './images/viewport-opt.gif';
-import gifInterpolation3 from './images/viewport-2-opt.gif';
-import chartInterpolation3 from './images/viewport-2-opt-chart.png';
-import chartPolynomialRegression from './images/polynomial-regression-opt.png';
-import patternPolynomialRegression from './images/polynomial-regression-opt-pattern.png';
-import patternInterpolation from './images/viewport-2-opt-pattern.png';
-import patternInterpolation2 from './images/viewport-2-opt-pattern-2.png';
-
-preloader({
-  memIEWin,
-  memConfused,
-  memNotBad,
-  memGreat,
-  memBravo,
-  memMath,
-  memSeba,
-  gifInterpolation,
-  gifInterpolation2,
-  gifInterpolation3,
-  chartInterpolation3,
-  chartPolynomialRegression,
-  patternPolynomialRegression,
-  patternInterpolation,
-  patternInterpolation2,
-});
 
 // Require CSS
 require('normalize.css');
@@ -75,6 +39,8 @@ const theme = createTheme(
 
 export default class Presentation extends React.Component {
   render() {
+    const assetsUrl = 'https://raw.githubusercontent.com/sebastianmusial/component-style-guide/master/src';
+
     return (
       <Deck
         transition={['zoom', 'slide']}
@@ -111,7 +77,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="tertiary">
-          <Image src={memIEWin} width="1000"></Image>
+          <Image src={`${assetsUrl}/images/ie-win.gif`} width="1000"></Image>
         </Slide>
 
         <CodeSlide
@@ -121,14 +87,14 @@ export default class Presentation extends React.Component {
           ranges={[
             { loc: [0, 0], title: "Zakres styli #1" },
             { loc: [0, 1] },
-            { loc: [0, 1], image: memNotBad },
+            { loc: [0, 1], image: `${assetsUrl}/images/not-bad.gif` },
             { loc: [0, 1], note: "Co z zakresem?" },
             { loc: [0, 1], note: "Modyfikatory w różnych miejscach? 😱" },
             { loc: [3, 11] },
             { loc: [4, 7], note: "😱 headline?! u-text--white?!" },
             { loc: [7, 10], note: "😱 description?! u-margin--small?!" },
             { loc: [12, 17] },
-            { loc: [12, 17], image: memConfused },
+            { loc: [12, 17], image: `${assetsUrl}/images/confused.gif` },
           ]}/>
 
         <CodeSlide
@@ -138,7 +104,7 @@ export default class Presentation extends React.Component {
           ranges={[
             { loc: [0, 0], title: "Zakres styli #2" },
             { loc: [0, 1] },
-            { loc: [0, 1], image: memGreat },
+            { loc: [0, 1], image: `${assetsUrl}/images/great.gif` },
             { loc: [3, 7], note: "Modyfikatory w komponencie 👌" },
             { loc: [7, 10], note: "Ogarnięta struktura 👌" },
             { loc: [10, 13], note: "Ogarnięta struktura 👌" },
@@ -165,7 +131,7 @@ export default class Presentation extends React.Component {
             { loc: [36, 40], note: "Dedykowane style 👌" },
             { loc: [42, 45], note: "Mały komponent 👌" },
             { loc: [46, 50], note: "Dedykowane style 👌" },
-            { loc: [46, 50], image: memBravo },
+            { loc: [46, 50], image: `${assetsUrl}/images/bravo.gif` },
           ]}/>
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
@@ -186,7 +152,7 @@ export default class Presentation extends React.Component {
         />
         
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <Image src={gifInterpolation} width="1000"></Image>
+          <Image src={`${assetsUrl}/images/media-query-opt.gif`} width="1000"></Image>
         </Slide>
 
         <CodeSlide
@@ -199,7 +165,7 @@ export default class Presentation extends React.Component {
           ]}/>
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <Image src={gifInterpolation2} width="1000"></Image>
+          <Image src={`${assetsUrl}/images/viewport-opt.gif`} width="1000"></Image>
         </Slide>
 
         <CodeSlide
@@ -222,25 +188,25 @@ export default class Presentation extends React.Component {
           ]}/>
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <Image src={gifInterpolation3} width="1000"></Image>
+          <Image src={`${assetsUrl}/images/viewport-2-opt.gif`} width="1000"></Image>
         </Slide>
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <Image src={chartInterpolation3} width="1000"></Image>
+          <Image src={`${assetsUrl}/images/viewport-2-opt-chart.png`}  width="1000"></Image>
           <Text textSize={20} lineHeight={1} textColor="secondary">
             Interpolacja liniowa + breakpointy
           </Text>
         </Slide>
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <Image src={chartPolynomialRegression} width="1000"></Image>
+          <Image src={`${assetsUrl}/images/polynomial-regression-opt.png`} width="1000"></Image>
           <Text textSize={20} lineHeight={1} textColor="secondary">
             Aproksymacja wielomianowa
           </Text>
         </Slide>
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
-          <Image src={patternPolynomialRegression}></Image>
+          <Image src={`${assetsUrl}/images/polynomial-regression-opt-pattern.png`}></Image>
           <CodePane
             transition={['fade']}
             lang="css"
@@ -262,11 +228,11 @@ export default class Presentation extends React.Component {
           textSize={15}
           ranges={[
             { loc: [0, 0], title: 'Interpolacja liniowa' },
-            { loc: [0, 0], image: patternInterpolation },
+            { loc: [0, 0], image: `${assetsUrl}/images/viewport-2-opt-pattern.png` },
             { loc: [3, 9] },
-            { loc: [10, 14], image: patternInterpolation2 },
+            { loc: [10, 14], image: `${assetsUrl}/images/viewport-2-opt-pattern-2.png` },
             { loc: [10, 14] },
-            { loc: [10, 14], image: memMath },
+            { loc: [10, 14], image: `${assetsUrl}/images/math.gif` },
             { loc: [15, 19] },
             { loc: [20, 24] },
             { loc: [25, 26] },
@@ -419,7 +385,7 @@ export default class Presentation extends React.Component {
         />
 
         <Slide transition={['fade']} bgColor="primary">
-          <Image src={memSeba} width="500"></Image>
+          <Image src={`${assetsUrl}/images/typowy-seba.png`} width="500"></Image>
           <Appear>
             <Link href="https://github.com/sebastianmusial" target="_blank">
               <Text textSize={24} padding={20} lineHeight={1} textColor="secondary">

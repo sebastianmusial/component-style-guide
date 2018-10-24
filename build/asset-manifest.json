@@ -1,19 +1,6 @@
 {
   "main.css": "static/css/main.653da357.css",
   "main.css.map": "static/css/main.653da357.css.map",
-  "main.js": "static/js/main.33eda212.js",
-  "main.js.map": "static/js/main.33eda212.js.map",
-  "static/media/bravo.gif": "static/media/bravo.36dca98a.gif",
-  "static/media/confused.gif": "static/media/confused.802d648b.gif",
-  "static/media/great.gif": "static/media/great.5aae2069.gif",
-  "static/media/ie-win.gif": "static/media/ie-win.ab5ee722.gif",
-  "static/media/math.gif": "static/media/math.c2df24fa.gif",
-  "static/media/media-query-opt.gif": "static/media/media-query-opt.47397a7d.gif",
-  "static/media/not-bad.gif": "static/media/not-bad.58bd766f.gif",
-  "static/media/polynomial-regression-opt.png": "static/media/polynomial-regression-opt.f3a26315.png",
-  "static/media/typowy-seba.png": "static/media/typowy-seba.48aa2f9d.png",
-  "static/media/viewport-2-opt-chart.png": "static/media/viewport-2-opt-chart.064af31c.png",
-  "static/media/viewport-2-opt-pattern-2.png": "static/media/viewport-2-opt-pattern-2.e3ede249.png",
-  "static/media/viewport-2-opt.gif": "static/media/viewport-2-opt.a3b12e7a.gif",
-  "static/media/viewport-opt.gif": "static/media/viewport-opt.56e00008.gif"
+  "main.js": "static/js/main.5cb91e6d.js",
+  "main.js.map": "static/js/main.5cb91e6d.js.map"
 }
