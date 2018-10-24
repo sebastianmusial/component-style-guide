@@ -1,1 +1,0 @@
-# Component style guide
