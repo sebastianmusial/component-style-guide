@@ -133,6 +133,7 @@ export default class Presentation extends React.Component {
             { loc: [46, 50], note: "Dedykowane style 👌" },
             { loc: [46, 50], image: `${assetsUrl}/images/bravo.gif` },
           ]}/>
+          
 
         <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
           <BlockQuote>
