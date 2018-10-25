@@ -118,6 +118,14 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Image src={`${assetsUrl}/images/mem-no.gif`} width="1000"></Image>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="tertiary">
+          <Image src={`${assetsUrl}/images/mem-do-it.gif`} width="1000"></Image>
+        </Slide>
+
         <CodeSlide
           transition={['fade']}
           lang="html"
